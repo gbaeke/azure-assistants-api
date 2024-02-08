@@ -1,6 +1,6 @@
 # Sample code for Azure OpenAI Assistants API
 
-Check out the following blog post:
+Check out the following blog post: https://blog.baeke.info/2024/02/08/a-look-at-the-azure-openai-assistants-api/
 
 To run this code, put an `env` file in the root of the project with the following content:
 
