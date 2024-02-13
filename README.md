@@ -15,3 +15,11 @@ You will need to install the following packages:
 - openai
 - python-dotenv
 - pillow
+
+To learn more, check out the following resources:
+- https://blog.baeke.info/2024/02/08/a-look-at-the-azure-openai-assistants-api/
+- https://blog.baeke.info/2024/02/09/using-tools-with-the-azure-openai-assistants-api/
+- https://blog.baeke.info/2024/02/10/retrieval-with-the-azure-openai-assistants-api/
+- https://blog.baeke.info/2024/02/11/fast-chat-bot-creation-with-the-openai-assistants-api-and-the-microsoft-bot-framework-sdk/
+
+Enjoy!
