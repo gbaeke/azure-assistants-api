@@ -1,0 +1,20 @@
+POST http://127.0.0.1:8324/message
+Content-Type: application/json
+access_token: 12345678
+
+{
+    "message": "How does Copilot Studio work?",
+    "thread_id": "thread_S2mwvse5Zycp6BOXNyrUdlaK"
+}
+
+###
+
+POST http://127.0.0.1:8324/thread
+Content-Type: application/json
+access_token: 12345678
+
+###
+POST https://1007-94-143-189-243.ngrok-free.app/thread/
+Content-Type: application/json
+access_token: 12345678
+

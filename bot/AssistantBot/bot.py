@@ -11,6 +11,7 @@ class MyBot(ActivityHandler):
 
     # add property to store thread id
     thread_id = None
+    message_count = 0
 
     async def on_message_activity(self, turn_context: TurnContext):
         # add message to thread
@@ -24,8 +25,11 @@ class MyBot(ActivityHandler):
             print("No tools ran...")
         message = assistant.return_message(self.thread_id)
 
-
         await turn_context.send_activity(message)
+
+        # increase message count
+        self.message_count += 1
+        await turn_context.send_activity("Message count: " + str(self.message_count))
 
     async def on_members_added_activity(
         self,
@@ -36,4 +40,5 @@ class MyBot(ActivityHandler):
             if member_added.id != turn_context.activity.recipient.id:
                 # Create a new thread
                 self.thread_id = assistant.create_thread()
+                self.message_count = 0
                 await turn_context.send_activity("Hello. Thread id is: " + self.thread_id)
